@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="">
+    <header>
+        <nav class="mt-4">
+            <div class="headTop row">
+                <div class="col-lg-3 logo-img">
+                    PRODEVANS TECHNOLOGIES
+                </div>
+                <div class="col-lg-6 Search-bar">
+                    <div class="input-group input-group-lg">
+                        <input type="email" class="form-control">
+                        <button class="btn btn-danger">
+                            Search
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 signin">
+                    <!-- <div>
+                        <select class="form-select">
+                            <option>Language</option>
+                            <option>English</option>
+                            <option>हिंदी</option>
+                        </select>
+                    </div> -->
+                    <div>
+                        <button class="btn  btn-danger" data-bs-target="#signin" data-bs-toggle="modal"><span class="bi bi-person-fill"></span> SignIn</button>
+                    </div>
+                    <div>
+                        <button class="btn  btn-primary" data-bs-target="#register" data-bs-toggle="modal"><span class="bi bi-person-fill"></span> Register</button>
+                    </div>
+                    <div class="modal" id="signin">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3><span class="bi bi-person-fill"></span>Sign In</h3>
+                                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <dt>User Name</dt>
+                                    <dd><input type="text" class="form-control"></dd>
+                                    <dt>Password</dt>
+                                    <dd><input type="password" class="form-control"></dd>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary">Login</button>
+                                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal" id="register">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3><span class="bi bi-person-fill"></span>Register Here</h3>
+                                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <dt>User Name</dt>
+                                    <dd><input type="text" class="form-control"></dd>
+                                    <dt>Password</dt>
+                                    <dd><input type="password" class="form-control"></dd>
+                                    <dt>Confirm Password</dt>
+                                    <dd><input type="password" class="form-control"></dd>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary">Login</button>
+                                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+        <div class="headBottom d-flex flex-row-reverse">
+            <div class="buttons">
+            <button class="btn btn-lg">Library</button>
+            <button class="btn btn-lg">Faculty</button>
+            <button class="btn btn-lg">Courses</button>
+            <button class="btn btn-lg">About</button>
+            <button class="btn btn-lg">Home</button>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="carousels">
+        <div class="carousel slide carousel-dark " id="banner">
+            <div class="carousel-inner slide" data-bs-ride="carousel">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://nareshit.in/wp-content/uploads/2019/10/WhatsApp-Image-2023-10-14-at-12.04.24-PM-6.jpeg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://nareshit.in/wp-content/uploads/2019/10/WhatsApp-Image-2023-10-14-at-12.57.51-PM.jpeg" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://nareshit.in/wp-content/uploads/2019/03/WhatsApp-Image-2023-10-14-at-12.04.24-PM-3.jpeg" class="d-block w-100">
+                </div>
+            </div>
+            <div>
+                <button data-bs-slide="prev" data-bs-target="#banner" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-slide="next" data-bs-target="#banner" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="carousel-indicators">
+                <button class="active" data-bs-slide-to="0" data-bs-target="#banner"></button>
+                <button data-bs-slide-to="1" data-bs-target="#banner"></button>
+                <button data-bs-slide-to="2" data-bs-target="#banner"></button>
+            </div>
+        </div>
+    </section>
+    <modal>
+
+    </modal>
+
+    <h1 class="trending m-5 text-primary">Trending Courses</h1>
+    <marquee class="mrq mb-5" behavior="scroll" direction="left">         
+         <div>%Dushera Puja Offer%</div>
+    </marquee>
+    <section class="cardsmain mb-5">
+        <div class="cards">
+            <div class="card carddiv">
+                <img src="images/10.jpg" class="card-img-top">
+                <div class="card-header text-center">
+                    <!-- <h4 class="card-title">Electronics</h4>
+                    <p class="card-subtitle">Tele Communication</p> -->
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd>Electronics</dd>
+                        <dt>Price</dt>
+                        <dd>$120.00</dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100" data-bs-target="#buy" data-bs-toggle="modal">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card carddiv" style="width: 300px;">
+                <img src="images/11.jpg" class="card-img-top">
+                <div class="card-header text-center">
+                    <!-- <h4 class="card-title">Electronics</h4>
+                    <p class="card-subtitle">Tele Communication</p> -->
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd>Nural Networks</dd>
+                        <dt>Price</dt>
+                        <dd>$150.00</dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100" data-bs-target="#buy" data-bs-toggle="modal">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card carddiv" style="width: 300px;">
+                <img src="images/12.jpg" class="card-img-top">
+                <div class="card-header text-center">
+                    <!-- <h4 class="card-title">Electronics</h4>
+                    <p class="card-subtitle">Tele Communication</p> -->
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd>Artificial Intelligence</dd>
+                        <dt>Price</dt>
+                        <dd>$120.00</dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100" data-bs-target="#buy" data-bs-toggle="modal">Add To Cart</button>
+                </div>
+            </div>
+            <div class="card carddiv" style="width: 300px;">
+                <img src="images/13.webp" class="card-img-top">
+                <div class="card-header text-center">
+                    <!-- <h4 class="card-title">Electronics</h4>
+                    <p class="card-subtitle">Tele Communication</p> -->
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd>Dev Ops</dd>
+                        <dt>Price</dt>
+                        <dd>$120.00</dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100" data-bs-target="#buy" data-bs-toggle="modal">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card carddiv" style="width: 300px;">
+                <img src="images/14.webp" class="card-img-top">
+                <div class="card-header text-center">
+                    <!-- <h4 class="card-title">Electronics</h4>
+                    <p class="card-subtitle">Tele Communication</p> -->
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd>Computer Networks</dd>
+                        <dt>Price</dt>
+                        <dd>$120.00</dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100" data-bs-target="#buy" data-bs-toggle="modal">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card carddiv" style="width: 300px;">
+                <img src="images/15.jpg" class="card-img-top">
+                <div class="card-header text-center">
+                    <!-- <h4 class="card-title">Electronics</h4>
+                    <p class="card-subtitle">Tele Communication</p> -->
+                </div>
+                <div class="card-body">
+                    <dl>
+                        <dt>Name</dt>
+                        <dd>Wireless Technology</dd>
+                        <dt>Price</dt>
+                        <dd>$120.00</dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary w-100" data-bs-target="#buy" data-bs-toggle="modal">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="modal" id="buy">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3><span class="bi bi-cart-fill"></span>Buy Course</h3>
+                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <dt>Enter Mobile number</dt>
+                            <dd><input type="text" class="form-control"></dd>
+                            <dt>Enter your Email ID</dt>
+                            <dd><input type="email" class="form-control"></dd>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary">Buy now</button>
+                            <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+        
+
+    <!-- Accordion for website -->
+    <!-- <section class="w-75 mx-lg-5">
+        <div>
+            <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Qualification
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 Dream
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.   
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Hobbies
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. 
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class="question">
+        <h2>Frequently Asked Questions </h2>
+        <div class="accordion" id="faq">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-toggle="collapse" data-bs-target="#q1" class="btn btn-dark w-100">What is Java?</button>
+                </div>
+                <div class="accordion-collapse collapse fade" id="q1" data-bs-parent="#faq">
+                    <div class="accordion-body">
+                        <p>
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                            anime, documentaries and more – on thousands of internet-connected devices.
+
+                            You can watch as much as you want, whenever you want, without a single ad – all for one low
+                            monthly price. There's always something new to discover, and new TV shows and movies are
+                            added every week!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-toggle="collapse" data-bs-target="#q2" class="btn btn-dark w-100">What is Java?</button>
+                </div>
+                <div class="accordion-collapse collapse" id="q2" data-bs-parent="#faq">
+                    <div class="accordion-body">
+                        <p>
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                            anime, documentaries and more – on thousands of internet-connected devices.
+
+                            You can watch as much as you want, whenever you want, without a single ad – all for one low
+                            monthly price. There's always something new to discover, and new TV shows and movies are
+                            added every week!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-toggle="collapse" data-bs-target="#q3" class="btn btn-dark w-100">What is Java?</button>
+                </div>
+                <div class="accordion-collapse collapse" id="q3" data-bs-parent="#faq">
+                    <div class="accordion-body">
+                        <p>
+                            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                            anime, documentaries and more – on thousands of internet-connected devices.
+
+                            You can watch as much as you want, whenever you want, without a single ad – all for one low
+                            monthly price. There's always something new to discover, and new TV shows and movies are
+                            added every week!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section> -->
+
+    <section>
+
+    </section>
+
+
+    <footer>
+        <div class="footer1">
+            <div class="row firstftr">
+                <div class="col-3 footerlogo ftr">
+                    <img src="images/1_L9PUt67xPeg3fK-BZeqgFQ.png">
+                </div>
+                <div class="col-7 middleFooter ftr">
+                    <div><a href="#">Why Prodevans?</a></div>
+                    <div><a href="#">Services</a></div>
+                    <div><a href="#">demo</a></div>
+                    <div><a href="#">Policy Document</a></div>
+                </div>
+                <div class="col-2 iconsFooter ftr">
+                    <div><button><i class="bi bi-twitter"></i></button></div>
+                    <div><button><i class="bi bi-instagram"></i></button></div>
+                    <div><button><i class="bi bi-facebook"></i></button></div>
+                    <div><button><i class="bi bi-github"></i></button></div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+                <div class="copyWrite">@copywrite</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

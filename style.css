@@ -1,0 +1,246 @@
+.container {
+  margin: 0px;
+  padding: 0px;
+}
+.row {
+  width: 100%;
+  margin: 0;
+}
+.headTop {
+  margin: 0;
+  padding-bottom: 20px;
+  /* gap: 10px; */
+}
+.logo img {
+  height: 100px;
+}
+.logo-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f2f5a;
+  font-size: 20px;
+  font-weight: bold;
+}
+.Search-bar {
+  align-items: center;
+}
+.Search-bar input {
+  outline: none;
+}
+.Search-bar input:active {
+  outline: none;
+}
+.signin {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.cardsmain {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.cards {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+}
+.carddiv {
+  padding: 5px;
+  margin: 10px;
+}
+.carddiv img {
+  height: 200px;
+  width: 100%;
+}
+#faq {
+  margin: 0 50px;
+  padding: 20px;
+}
+.question {
+  margin-top: 120px;
+  text-align: left;
+}
+.question h2 {
+  text-align: center;
+}
+/* .items{
+    margin: 20px;
+} */
+#carousels {
+  padding: 30px;
+  margin: 10px 100px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trending {
+  text-align: center;
+}
+
+.mrq {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #c3ceec;
+  background: #185b42;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer1 {
+  padding: 30px;
+  background-color: #2258c4;
+}
+.footerlogo {
+  margin: 0;
+  padding: 0;
+}
+.ftr {
+  height: 80px;
+  align-items: center;
+}
+.ftr img {
+  height: 80px;
+}
+.copyWrite {
+  height: 30px;
+  text-align: center;
+  align-items: center;
+}
+.middleFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.ftr a {
+  text-decoration: none;
+  color: white;
+}
+.iconsFooter {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+}
+.iconsFooter button {
+  border-radius: 50%;
+}
+.footer1 hr {
+  color: white;
+}
+.headBottom {
+  margin-bottom: 50px;
+  background: #d9e7cb;
+}
+.buttons {
+  font-weight: bold;
+  color: #386a20;
+  padding: 10px;
+}
+.buttons button:hover {
+  font-weight: bold;
+  color: white;
+  background: #386a20;
+}
+
+/* for large and medium screen only */
+@media (max-width: 992px) {
+  .cards {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+  #carousels {
+    padding: 30px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+  }
+  .firstftr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Search-bar {
+    margin: 0 2%;
+  }
+}
+
+/* for mobile only */
+@media (max-width: 576px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #carousels {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .cards {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 300px;
+  }
+  .headTop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 50px 0;
+    padding-bottom: 20px;
+    gap: 10px;
+  }
+  .cardsmain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .headBottom {
+    margin-bottom: 20px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .firstftr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstftr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .middleFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 20px;
+    gap: 10px;
+  }
+  .ftr {
+    height: auto;
+    align-items: center;
+  }
+}
